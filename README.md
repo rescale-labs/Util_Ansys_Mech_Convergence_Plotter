@@ -97,7 +97,7 @@ Here 12,7 represents the width x height of the plot in inches.
 fig, ax = plt.subplots(2, 1, figsize=(12, 7), sharex=True, gridspec_kw={'height_ratios': [4, 1]}) 
 
 # Support
-This script has been tested to work with the following Ansys Mechanical Versions?
+This script has been tested to work with the following Ansys Mechanical Versions:
 
 2023 R2
 2023 R1
