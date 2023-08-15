@@ -91,7 +91,7 @@ https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439
 
 Users can review the python script to adapt this for other convergence plots such as Displacement Convergence.
 
-To adjust the size of the plot to better fit your monitor screen size you can edit line #35. 
+To adjust the size of the plot to better fit your monitor screen size you can edit line ~#57. 
 Here 12,7 represents the width x height of the plot in inches.
 
 fig, ax = plt.subplots(2, 1, figsize=(12, 7), sharex=True, gridspec_kw={'height_ratios': [4, 1]}) 
