@@ -30,14 +30,12 @@ Two operational modes are outlined below: the first automatically generates and 
 
 For the automated Force-Convergence generation approach, it is advisable to create and save a template with the specified settings. This ensures that the template can be reused without manual command editing for each run.
 
-2. Upload convergence.py as Template Input:
+2. Software Commands:
 
-Include the convergence.py Python script as part of the template. This script will be reused for all runs.
+After selecting the desired Ansys Mechanical Version, prepend the following commands to first download the python file from this Rescale Labs Github Repository and then install and configure a virtual Python environment with the required pandas and matplotlib libraries.
+Note you can also just add convergence.py file as an input file saved to the template instead of the wget command to donwload the file at runtime.
 
-3. Software Commands:
-
-After selecting the desired Ansys Mechanical Version, prepend the following commands to install and configure a virtual Python environment with the required pandas and matplotlib libraries.
-
+		wget https://raw.githubusercontent.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/main/convergence.py
 		pip3 install --user virtualenv
 		python3 -m virtualenv $HOME/ansys
 		source $HOME/ansys/bin/activate
@@ -67,11 +65,11 @@ Finally, the convergence script is called one last time after the Ansys solver c
 
 In your software command box, the ideal arrangement would resemble the following:
 
-![Screenshot 2023-08-14 at 5 20 42 PM](https://github.com/rescale/soln-wee-scripts/assets/64439634/e525e19b-1943-48f9-b595-78b1f9c6cf70)
+![Screenshot 2023-08-15 at 2 21 02 PM](https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/00e3f1dc-f123-4c90-a475-74fa96f42021)
 
 Users can easily access the convergence.png file for review during the job's execution by performing a search in the livetailing menu. This provides a convenient way to monitor the Force Convergence Graph in real-time as the simulation progresses.
 
-https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/26b65b78-1c03-4706-97b7-ed80cad5367c
+https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/9d577ee9-d66c-40cf-8fce-3f3ab5168043
 
 ## Using Jupyter Notebook
 
@@ -79,7 +77,7 @@ For Rescale accounts configured to employ Jupyter Notebook alongside Jobs, users
 
 To achieve this:
 
-1. Ensure that convergence.py is included among the Job inputs, or utilize a template that incorporates this file within the Inputs section.
+1. Ensure that convergence.py is included among the Job inputs or add the wget command prior to the Ansys command as we did in the previous approach, or utilize a template that incorporates this file within the Inputs section.
 
 2. Initiate the Jupyter Notebook by accessing it through the Status Page.
 
@@ -87,7 +85,7 @@ To achieve this:
 
 4. Within the notebook cell, input the command %run convergence.py, and subsequently execute it by pressing Run (Shift + Enter). This action will trigger the generation of the convergence.png plot, allowing for immediate visualization.
 
-https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/1ffe487d-f0b9-4b83-9905-a5ab6b2d03a4
+https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/5459c5d4-ff5f-481d-8c9c-b05da4a6783b
 
 # Edits
 
