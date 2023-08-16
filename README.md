@@ -73,19 +73,27 @@ https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439
 
 ## Using Jupyter Notebook
 
-For Rescale accounts configured to employ Jupyter Notebook alongside Jobs, users have the capability to execute the convergence.py file directly from within the Jupyter Notebook interface, facilitating the visualization of the graph.
+For Rescale accounts configured to employ Jupyter Notebook alongside Jobs, users can use the Force_Convergenge_plotting.ipynb notebook from this repository.
 
 To achieve this:
 
-1. Ensure that convergence.py is included among the Job inputs or add the wget command prior to the Ansys command as we did in the previous approach, or utilize a template that incorporates this file within the Inputs section.
+1. Download the Force_Convergenge_plotting.ipynb notebook from this repository to the Rescale Batch job. 
+
+You can simple add the following command prior to the default Ansys Mechanical Command:
+
+	wget https://raw.githubusercontent.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/main/Force_Convergece_Plotting.ipynb
+
+In your software command box, the ideal arrangement would resemble the following:
+
+![image](https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/e6d56e73-8e5f-4ab8-ac94-52b9028c99ae)
 
 2. Initiate the Jupyter Notebook by accessing it through the Status Page.
 
-3. Navigate to the Shared directory and establish a new Python3 Session.
+3. Navigate to the Shared directory and click on the Force_Convergenge_plotting.ipynb notebook
 
-4. Within the notebook cell, input the command %run convergence.py, and subsequently execute it by pressing Run (Shift + Enter). This action will trigger the generation of the convergence.png plot, allowing for immediate visualization.
+4. To run the code select Run All from the Cell Menu Drop Down
 
-https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/5459c5d4-ff5f-481d-8c9c-b05da4a6783b
+https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/8fc2edb8-5670-424a-87d7-0130b0217f32
 
 # Edits
 
