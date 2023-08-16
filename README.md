@@ -73,11 +73,11 @@ https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439
 
 ## Using Jupyter Notebook
 
-For Rescale accounts configured to employ Jupyter Notebook alongside Jobs, users can use the Force_Convergenge_plotting.ipynb notebook from this repository.
+For Rescale accounts configured to employ Jupyter Notebook alongside Jobs, users can use the Force_Convergenge_Plotting.ipynb notebook from this repository.
 
 To achieve this:
 
-1. Download the Force_Convergenge_plotting.ipynb notebook from this repository to the Rescale Batch job. 
+1. Download the Force_Convergenge_Plotting.ipynb notebook from this repository to the Rescale Batch job. 
 
 You can simple add the following command prior to the default Ansys Mechanical Command:
 
@@ -89,7 +89,7 @@ In your software command box, the ideal arrangement would resemble the following
 
 2. Initiate the Jupyter Notebook by accessing it through the Status Page.
 
-3. Navigate to the Shared directory and click on the Force_Convergenge_plotting.ipynb notebook
+3. Navigate to the Shared directory and click on the Force_Convergenge_Plotting.ipynb notebook
 
 4. To run the code select Run All from the Cell Menu Drop Down
 
