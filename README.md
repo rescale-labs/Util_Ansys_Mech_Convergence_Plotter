@@ -1,5 +1,6 @@
 # Ansys Mechanical Force Convergence Plots
-![image](https://github.com/rescale/soln-wee-scripts/assets/64439634/2d99c234-fdcb-46ef-9a56-8ac6e87dc770)
+![image](https://github.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/assets/64439634/f0e7629b-dc19-4265-9e14-8a22df2c2192)
+
 
 When conducting a Non-Linear Ansys Mechanical simulation, the solver generates Force Convergence Plots that can be visualized within the Solution Information Branch of the Ansys Mechanical Tree. These graphical representations offer valuable insights into the progression of the solution. Specifically, the upper graph depicts the Model's Force Convergence plotted against the number of iterations performed, while the lower graph illustrates Simulation Time plotted against Cumulative Iterations.
 
