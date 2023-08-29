@@ -34,7 +34,7 @@ For the automated Force-Convergence generation approach, it is advisable to crea
 2. Software Commands:
 
 After selecting the desired Ansys Mechanical Version, prepend the following commands to first download the python file from this Rescale Labs Github Repository and then install and configure a virtual Python environment with the required pandas and matplotlib libraries.
-Note you can also just add convergence.py file as an input file saved to the template instead of the wget command to donwload the file at runtime.
+Note you can also just add convergence.py file as an input file saved to the template instead of the wget command to download the file at runtime.
 
 		wget https://raw.githubusercontent.com/rescale-labs/Util_Ansys_Mech_Convergence_Plotter/main/convergence.py
 		pip3 install --user virtualenv
